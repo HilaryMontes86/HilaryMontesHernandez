@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../../css/estilo.css">
+</head>
+<body>
+    <form id="formRegistro">
+    <h2>Registro</h2>
+    
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" placeholder="Nombre" required>
+
+    <label for="apellido">Apellido</label>
+    <input type="text" name="apellido" placeholder="Apellido" required>
+
+    <label for="correo">Correo</label>
+    <input type="email" name="correo" placeholder="Correo" required>
+
+    <label for="contraseña">Contraseña</label>
+    <input type="password" name="contraseña" placeholder="Contraseña" required>
+
+   
+
+    <div class="contenedor">
+    
+    <label for="fotoInput" class="foto-label">
+        Foto de perfil
+    </label>
+
+    <span id="nombreArchivo">Ningún archivo seleccionado</span>
+
+    <input type="file" id="fotoInput" accept="image/*">
+</div>
+
+    <select name="rol">
+        <option value="visitante">Visitante</option>
+        <option value="admin">Administrador</option>
+    </select>
+
+    <button type="submit">Registrarse</button>
+</form>
+</body>
+<script src="../registro/registro.js"></script>
+</html>

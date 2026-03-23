@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    height: 100vh;
+    background: #fff9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* formularios */
+form {
+    background: #fff9f9;
+    padding: 40px;
+    border-radius: 15px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #8b0000;
+    text-align: center;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+label {
+    color: #333;
+    font-size: 14px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    background: #ddd;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border: 1px solid #c03a5a;
+    box-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
+    background: rgb(255, 250, 250);
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #8b0000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #c03a5a;
+    transform: scale(1.03);
+}
+
+button:last-of-type {
+    background: transparent;
+    color: #8b0000;
+    border: 1px solid #8b0000;
+}
+
+button:last-of-type:hover {
+    background: #8b0000;
+    color: white;
+}
+
+/*Estilo de Registro*/
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Oculta el input original de subir archivo */
+.contenedor input[type="file"] {
+    display: none;
+}
+
+.foto-label {
+    background-color: #7a001f;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.foto-label:hover {
+    background-color: #c03a5a;
+}
+
+/*descipcion del archivo subido*/
+#nombreArchivo {
+    font-size: 14px;
+    color: #555;
+}
+
+#fotoInput {
+    display: none;
+}
+
+

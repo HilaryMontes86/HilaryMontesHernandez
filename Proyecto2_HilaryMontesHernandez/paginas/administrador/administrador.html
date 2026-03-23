@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio-Administrador</title>
+    <link rel="stylesheet" href="../inicio/inicio.css">
+</head>
+<body>
+
+    <header >
+    <h1>BTS</h1>
+</header>
+
+<nav>
+    <div class="nav-Inicio" onclick="irAInicio()">Inicio</div>
+
+    <img id="fotoPerfil" class="fotoPerfil" onclick="irAPerfil()">
+</nav>
+
+<main id="contenido" class="grid"></main>
+<section class="subir">
+    <h3>Agregar nuevo álbum</h3>
+
+    <div class="form-grupo">
+        <input type="text" id="nombreAlbum" placeholder="Nombre del álbum">
+    </div>
+
+    <div class="form-grupo">
+        <input type="text" id="fechaAlbum" placeholder="Año">
+    </div>
+
+    <div class="form-grupo">
+        <input type="text" id="descripcionAlbum" placeholder="Descripción">
+    </div>
+
+    <label for="imagenAlbum" class="subirImagen">Seleccionar imagen</label>
+    <input type="file" id="imagenAlbum" accept="image/*">
+
+    <span id="nombreArchivo" class="archivo-nombre"></span>
+    <br>
+
+    <button class="btn-agregar" onclick="agregarAlbum()">Agregar álbum</button>
+</section>
+
+<footer>
+        <p>Proyecto Parcial 2 - Interfaz Dinámica  Enero-Mayo 2026  - Hilary Montes Hernández </p>
+    </footer>
+</body>
+<script src="../administrador/administrador.js"></script>
+</html>

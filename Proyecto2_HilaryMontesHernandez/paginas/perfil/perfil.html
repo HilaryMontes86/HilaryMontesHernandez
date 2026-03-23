@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditarPerfil</title>
+    <link rel="stylesheet" href="perfil.css">
+    
+</head>
+<body>
+
+    <header class="header">
+    <h1>BTS</h1>
+</header>
+
+<nav class="nav">
+    <div class="nav-Inicio" onclick="irAInicio()">Inicio</div>
+    <img id="fotoPerfil" class="fotoPerfil" onclick="irAPerfil()">
+</nav>
+
+<main class="form-contenedor">
+    <form id="formPerfil">
+        <h2>Editar Perfil</h2>
+
+        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="text" name="apellido" placeholder="Apellido">
+        <input type="email" name="correo" placeholder="Correo">
+        <input type="password" name="contraseña" placeholder="Contraseña">
+
+        <div class="contenedor">
+    
+            <label for="nuevaFoto" class="foto-label">
+                Seleccionar imagen
+            </label>
+
+            <span id="nombreArchivo">Ningún archivo seleccionado</span>
+
+            <input type="file" id="nuevaFoto" accept="image/*">
+        </div>
+
+        <select name="rol" id="rol">
+            <option value="visitante">Visitante</option>
+            <option value="admin">Administrador</option>
+        </select>
+
+        <button type="submit">Guardar cambios</button>
+        <button type="button" onclick="cerrarSesion()">Cerrar sesión</button>
+
+    </form>
+
+</main>
+
+<footer>
+        <p>Proyecto Parcial 2 - Interfaz Dinámica  Enero-Mayo 2026  - Hilary Montes Hernández </p>
+    </footer>
+
+</body>
+<script src="perfil.js"></script>
+</html>
